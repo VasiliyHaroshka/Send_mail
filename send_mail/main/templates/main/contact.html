@@ -5,6 +5,7 @@
     <title>Contact Form</title>
 </head>
 <body>
+    <h2>Subscribe to receive an emails</h2>
     <form action="{% url 'contact' %}" method="post">
         {% csrf_token %}
         <table>{{ form.as_table }}</table>
